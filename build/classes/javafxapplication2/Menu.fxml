@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="990.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.MenuController">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="990.0" layoutY="-2.0" pickOnBounds="true" style="-fx-opacity: 0.8;">
+         <image>
+            <Image url="@/Images/tree.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="335.0" layoutY="54.0" text="Main Menu" textFill="#d43737">
+         <font>
+            <Font name="Bauhaus 93" size="65.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button fx:id="markf" layoutX="228.0" layoutY="163.0" mnemonicParsing="false" onAction="#marquer" prefHeight="30.0" prefWidth="533.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 50;" text="Mark A File" textFill="#dddd69">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="232.0" mnemonicParsing="false" onAction="#modif" prefHeight="39.0" prefWidth="533.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 50;" text="Modify A File" textFill="#fb8585">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="299.0" mnemonicParsing="false" onAction="#supp" prefHeight="28.0" prefWidth="533.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 50;" text="Delete A File" textFill="#66b340">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="364.0" mnemonicParsing="false" onAction="#chercher" prefHeight="18.0" prefWidth="533.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 50;" text="Search For A File" textFill="#5a96c5">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="825.0" layoutY="518.0" mnemonicParsing="false" onAction="#quitter" prefHeight="20.0" prefWidth="116.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5px;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="228.0" layoutY="428.0" mnemonicParsing="false" onAction="#afficher" prefHeight="18.0" prefWidth="533.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 50;" text="Show My File List" textFill="#c45ab6">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Button>
+      <Label fx:id="welcome" layoutX="732.0" layoutY="25.0" prefHeight="18.0" prefWidth="242.0" textAlignment="RIGHT" textFill="#fbf7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="910.0" layoutY="40.0" onAction="#deconnect" prefHeight="29.0" prefWidth="72.0" text="Sign Out" textAlignment="RIGHT" textFill="#f5f1f1" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="20.0" layoutY="22.0" onAction="#parametres" text="Account Setings" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

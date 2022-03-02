@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="990.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.List_utilController">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="990.0" pickOnBounds="true">
+         <image>
+            <Image url="@/Images/sunset.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="339.0" layoutY="80.0" text="Show Users" textFill="#f6ff00">
+         <font>
+            <Font name="Bauhaus 93" size="60.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="29.0" layoutY="21.0" onAction="#return_menu" text="&lt;- Go Back To Main Menu" textFill="#e7db39">
+         <font>
+            <Font name="Britannic Bold" size="17.0" />
+         </font>
+      </Hyperlink>
+      <TableView fx:id="user_table" layoutX="66.0" layoutY="174.0" prefHeight="200.0" prefWidth="858.0">
+        <columns>
+          <TableColumn fx:id="log" maxWidth="170.0" prefWidth="180.0" text="Login" />
+          <TableColumn fx:id="prenom" maxWidth="170.0" prefWidth="180.0" text="Last name" />
+            <TableColumn fx:id="nom" maxWidth="170.0" prefWidth="180.0" text="First name" />
+            <TableColumn fx:id="mail" maxWidth="170.0" prefWidth="180.0" text="E-mail" />
+            <TableColumn fx:id="genre" maxWidth="189.5999755859375" prefWidth="180.0" text="Gendre" />
+        </columns>
+      </TableView>
+      <Hyperlink layoutX="895.0" layoutY="20.0" onAction="#deconnect" text="Sign Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="110.0" layoutY="399.0" prefHeight="38.0" prefWidth="276.0" text="Alphabetic Order :" textFill="#a90000">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="519.0" layoutY="405.0" text="Gender :" textFill="#a90000">
+         <font>
+            <Font name="Bauhaus 93" size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combo" layoutX="312.0" layoutY="404.0" prefHeight="28.0" prefWidth="150.0" promptText="Alphabetic Order" />
+      <RadioButton fx:id="femme" layoutX="622.0" layoutY="403.0" mnemonicParsing="false" text="Female" textFill="WHITE">
+         <font>
+            <Font name="Bold Italic Art" size="19.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="sexe" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="homme" layoutX="733.0" layoutY="403.0" mnemonicParsing="false" text="Male" textFill="WHITE" toggleGroup="$sexe">
+         <font>
+            <Font name="Bold Italic Art" size="19.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="29.0" layoutY="527.0" mnemonicParsing="false" onAction="#annuler" prefHeight="38.0" prefWidth="105.0" style="-fx-background-color: #000000; -fx-border-color: white; -fx-border-radius: 5px;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="297.0" layoutY="478.0" mnemonicParsing="false" onAction="#Aff_sur_écran" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #000000; -fx-border-color: white; -fx-border-radius: 5px;" text="On screen" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="519.0" layoutY="478.0" mnemonicParsing="false" onAction="#aff_txt_file" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: #000000; -fx-border-color: white; -fx-border-radius: 5px;" text="In a text file" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="877.0" layoutY="531.0" mnemonicParsing="false" onAction="#quitter" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #000000; -fx-border-color: white; -fx-border-radius: 5px;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="nb_genre" layoutX="169.0" layoutY="536.0" prefHeight="27.0" prefWidth="691.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

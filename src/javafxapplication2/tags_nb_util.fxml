@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="990.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.Tags_nb_utilController">
+   <children>
+      <ImageView fitHeight="580.0" fitWidth="990.0" pickOnBounds="true">
+         <image>
+            <Image url="@/Images/purple.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="27.0" layoutY="16.0" onAction="#return_menu" text="&lt;- Go Back To Main Menu" textFill="#e0ec79">
+         <font>
+            <Font name="Britannic Bold" size="17.0" />
+         </font>
+      </Hyperlink>
+      <Button fx:id="afficher" layoutX="27.0" layoutY="508.0" mnemonicParsing="false" onAction="#afficher4" prefHeight="38.0" prefWidth="145.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5px;" text="On screen" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="77.0" layoutY="80.0" text="List of tags and Number of users " textFill="#f5ec0a">
+         <font>
+            <Font name="Bauhaus 93" size="60.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="891.0" layoutY="14.0" onAction="#deconnect" prefHeight="29.0" prefWidth="72.0" text="Sign Out" textAlignment="RIGHT" textFill="#f5f1f1" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Hyperlink>
+      <TableView fx:id="tags_nb_util_table" layoutX="10.0" layoutY="186.0" prefHeight="302.0" prefWidth="970.0">
+         <columns>
+            <TableColumn fx:id="tags" prefWidth="484.52834129333496" text="Tags" />
+            <TableColumn fx:id="nb_users" prefWidth="484.5283508300781" text="Number of users" />
+         </columns>
+      </TableView>
+      <Button fx:id="fermer" layoutX="833.0" layoutY="508.0" mnemonicParsing="false" onAction="#quitter" prefHeight="20.0" prefWidth="116.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5px;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="560.0" layoutY="508.0" mnemonicParsing="false" onAction="#annuler" prefHeight="20.0" prefWidth="116.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5px;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="227.0" layoutY="508.0" mnemonicParsing="false" onAction="#aff_txt_file" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 5px;" text="In a text file" textFill="WHITE">
+         <font>
+            <Font name="Britannic Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
