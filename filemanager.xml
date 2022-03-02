@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: May 19, 2021 at 11:58 PM
+- Server version: 10.4.17-MariaDB
+- PHP Version: 8.0.0
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="filemanager" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="files">
+                CREATE TABLE `files` (
+                  `Login` varchar(20) NOT NULL,
+                  `FilePath` varchar(500) NOT NULL,
+                  `Title` varchar(50) NOT NULL,
+                  `Author` varchar(50) NOT NULL,
+                  `Tags` varchar(500) NOT NULL,
+                  `Summary` varchar(500) NOT NULL,
+                  `Comments` varchar(500) NOT NULL,
+                  PRIMARY KEY (`FilePath`,`Login`) USING BTREE,
+                  KEY `Login` (`Login`),
+                  CONSTRAINT `files_ibfk_1` FOREIGN KEY (`Login`) REFERENCES `users` (`Login`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="tags_num">
+                CREATE TABLE `tags_num` (
+                  `Tag_Id` varchar(255) NOT NULL,
+                  `number` int(11) NOT NULL,
+                  PRIMARY KEY (`Tag_Id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `Login` varchar(20) NOT NULL,
+                  `Password` varchar(20) NOT NULL,
+                  `Nom` varchar(30) NOT NULL,
+                  `Prenom` varchar(30) NOT NULL,
+                  `Email` varchar(30) NOT NULL,
+                  `Sexe` varchar(10) NOT NULL,
+                  PRIMARY KEY (`Login`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'filemanager'
+    -->
+    <database name="filemanager">
+        <!-- Table files -->
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">C:\Program Files\CodeBlocks\codeblocks.exe</column>
+            <column name="Title">ena</column>
+            <column name="Author">moi</column>
+            <column name="Tags">codage;c;</column>
+            <column name="Summary">me</column>
+            <column name="Comments">moi la bas</column>
+        </table>
+        <table name="files">
+            <column name="Login">Nohnoh</column>
+            <column name="FilePath">C:\Users\azzab\Downloads\3573530.pdf</column>
+            <column name="Title">Math</column>
+            <column name="Author">Jhon</column>
+            <column name="Tags">arithmétique;analyse;</column>
+            <column name="Summary">Résumé pour les examens</column>
+            <column name="Comments">des examens, TDs et séries</column>
+        </table>
+        <table name="files">
+            <column name="Login">Nohnoh</column>
+            <column name="FilePath">C:\Users\azzab\OneDrive\Bureau\HTML PROJET.txt</column>
+            <column name="Title">Programation</column>
+            <column name="Author">Med</column>
+            <column name="Tags">java;codage;
+
+</column>
+            <column name="Summary">Travail à faire</column>
+            <column name="Comments">un projet</column>
+        </table>
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">C:\Users\maryo\Downloads\apps\java</column>
+            <column name="Title">java</column>
+            <column name="Author">mohamed</column>
+            <column name="Tags">lessons;java;</column>
+            <column name="Summary">resume</column>
+            <column name="Comments">cmts</column>
+        </table>
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">C:\Users\maryo\Downloads\UNI\2eme bis\POO AV\proj2\src\javafxapplication2</column>
+            <column name="Title">applications</column>
+            <column name="Author">Mahdi</column>
+            <column name="Tags">java;lessons</column>
+            <column name="Summary">ahla</column>
+            <column name="Comments">salut</column>
+        </table>
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">C:\Users\maryo\Downloads\UNI\2eme bis\SGBD\Préparation_Environnement_Oracle.pdf</column>
+            <column name="Title">base</column>
+            <column name="Author">someone</column>
+            <column name="Tags">tp;sgbd;</column>
+            <column name="Summary">qsdfg</column>
+            <column name="Comments"></column>
+        </table>
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">C:\Users\maryo\Downloads\UNI\2eme bis\SGBD\TP-admin-oracle-isg.docx</column>
+            <column name="Title">oracle</column>
+            <column name="Author">isg</column>
+            <column name="Tags">tp;sgbd;base;</column>
+            <column name="Summary">univeriste</column>
+            <column name="Comments">uni</column>
+        </table>
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">C:\Users\maryo\Music\Gaho - Heaven .mp3</column>
+            <column name="Title">fichier1</column>
+            <column name="Author"></column>
+            <column name="Tags">music;songs;</column>
+            <column name="Summary"></column>
+            <column name="Comments"></column>
+        </table>
+        <table name="files">
+            <column name="Login">mari</column>
+            <column name="FilePath">google.com</column>
+            <column name="Title">google</column>
+            <column name="Author"></column>
+            <column name="Tags">search;web;</column>
+            <column name="Summary"></column>
+            <column name="Comments"></column>
+        </table>
+        <table name="files">
+            <column name="Login">mohamed</column>
+            <column name="FilePath">google.tn</column>
+            <column name="Title">bssss</column>
+            <column name="Author"></column>
+            <column name="Tags">search;web;</column>
+            <column name="Summary"></column>
+            <column name="Comments"></column>
+        </table>
+        <table name="files">
+            <column name="Login">mohamed</column>
+            <column name="FilePath">twiter.com</column>
+            <column name="Title">hashahash</column>
+            <column name="Author"></column>
+            <column name="Tags">web;</column>
+            <column name="Summary"></column>
+            <column name="Comments"></column>
+        </table>
+        <!-- Table tags_num -->
+        <table name="tags_num">
+            <column name="Tag_Id">analyse</column>
+            <column name="number">1</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">arithmétique</column>
+            <column name="number">1</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">base</column>
+            <column name="number">1</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">c</column>
+            <column name="number">1</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">codage</column>
+            <column name="number">2</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">java</column>
+            <column name="number">3</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">lessons</column>
+            <column name="number">2</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">music</column>
+            <column name="number">1</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">search</column>
+            <column name="number">2</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">sgbd</column>
+            <column name="number">2</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">songs</column>
+            <column name="number">1</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">tp</column>
+            <column name="number">2</column>
+        </table>
+        <table name="tags_num">
+            <column name="Tag_Id">web</column>
+            <column name="number">3</column>
+        </table>
+        <!-- Table users -->
+        <table name="users">
+            <column name="Login">mari</column>
+            <column name="Password">1234</column>
+            <column name="Nom">abdi</column>
+            <column name="Prenom">Mariem</column>
+            <column name="Email">azerty@gjjk.com</column>
+            <column name="Sexe">Female</column>
+        </table>
+        <table name="users">
+            <column name="Login">mariem</column>
+            <column name="Password">Azerty</column>
+            <column name="Nom">bbbbbbb</column>
+            <column name="Prenom">mmmmmm</column>
+            <column name="Email">fghj@fghjk.hgf</column>
+            <column name="Sexe">Female</column>
+        </table>
+        <table name="users">
+            <column name="Login">maryouma</column>
+            <column name="Password">Azerty</column>
+            <column name="Nom">abdi</column>
+            <column name="Prenom">mimi</column>
+            <column name="Email">mariem@gmail.com</column>
+            <column name="Sexe">Female</column>
+        </table>
+        <table name="users">
+            <column name="Login">mohamed</column>
+            <column name="Password">Azerty</column>
+            <column name="Nom">mohamed</column>
+            <column name="Prenom">medali</column>
+            <column name="Email">med@g.fr</column>
+            <column name="Sexe">Male</column>
+        </table>
+        <table name="users">
+            <column name="Login">Nohnoh</column>
+            <column name="Password">N123456</column>
+            <column name="Nom">AZZABI</column>
+            <column name="Prenom">Nouha</column>
+            <column name="Email">nouha@gmail.com</column>
+            <column name="Sexe">Female</column>
+        </table>
+    </database>
+</pma_xml_export>
