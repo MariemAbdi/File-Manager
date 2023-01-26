@@ -104,3 +104,21 @@ Cette fonctionnalité n’est accessible que par l’administrateur de l’appli
 -Liste des utilisateurs pour un tag donnée. Cela permettra de repérer les utilisateurs ayant les mêmes centres d’intérêt.
 Le listage peut se faire (selon le choix de l’administrateur) soit sur écran, soit dans un fichier texte.
 -Gérer la possibilité de modifier les mots de passe des utilisateurs et les cas d’oublis de mots de passe
+
+
+#DEMO
+<video src="https://user-images.githubusercontent.com/100727442/214820883-773c564d-8686-4769-9812-210b95dfd4e9.mp4" />
+<video src="https://user-images.githubusercontent.com/100727442/214821098-223c6946-4e13-41ee-8bfb-889e2837d01c.mp4" />
+<video src="https://user-images.githubusercontent.com/100727442/214821243-ecb179d6-f622-44c2-a1bd-e0bed46dc323.mp4" />
+<video src="https://user-images.githubusercontent.com/100727442/214821565-a3510dbe-07dd-40bc-990e-96d7fcee3e64.mp4" />
+<video src="" />
+<video src="" />
+
+
+
+
+
+
+
+
+
